@@ -169,6 +169,21 @@ function FollowUp() {
             </Link>
           </div>
           <div className="pagination-nav__item pagination-nav__item--next">
+            <Link className="pagination-nav__link" to={useBaseUrl("activities/")}>
+              <div className="pagination-nav__sublabel">Check out</div>
+              <div className="pagination-nav__label">My activities</div>
+            </Link>
+          </div>
+          <div className="pagination-nav__item">
+            <Link
+              className="pagination-nav__link"
+              to={useBaseUrl("projects/")}
+            >
+              <div className="pagination-nav__sublabel">Check out</div>
+              <div className="pagination-nav__label">My projects</div>
+            </Link>
+          </div>
+          <div className="pagination-nav__item pagination-nav__item--next">
             <a
               className="pagination-nav__link"
               href={useBaseUrl("pdf/이력서_김천규.pdf")}

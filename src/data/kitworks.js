@@ -179,7 +179,7 @@ const projects = [
     subtitle:
       "풀스택개발자로 스터디모아 개발 및 유지보수",
     period: "2019.12 ~ 2024.07 (4년 8개월 - 56개월)",
-    tech: "NodeJS, Koa, React, Docker, Sequelize, Mysql, Apache, AWS, GitHub Actions, AWS CodeDeploy",
+    tech: "NodeJS, Koa, React, Docker, Sequelize, Mysql, kotlin, ktor, ktorm, Apache, AWS, GitHub Actions, AWS CodeDeploy",
     roles: "풀스택",
     description: (
       <>
@@ -259,6 +259,37 @@ const projects = [
         <p>
           메이저버전을 업데이트하기에 로직과 UI 테스트를 하나씩 진행하면서 이상 있는 부분 파악 후 개선
         </p>
+
+        <h3>
+          4. 트랜젝션 처리 (Seqeulize 오픈소스분석)
+        </h3>
+        <p>
+        트랜젝션이 중첩되었을때 `findOrCreate` 메서드 호출 시  의도한데로 동작이 안되는 현상을 확인
+        </p>
+        <p>
+          시퀄라이즈 문서 상에는 없어서 오픈소스 분석 후 문제 해결
+        </p>
+        <p>
+          분석 결과, 특정 트랜젝션을 옵션을 주지않으면 디폴트로 동작해서 발생한 오류로 파악 
+          <a href="https://github.com/sequelize/sequelize/blob/0b7c86d063bfb43fd3d513640456a63304934231/packages/core/src/model.js#L2030-L2094" target="_blank">시퀄리이즈 findOrCreate 트랜젝션 분석 코드</a>
+        </p>
+        <p>
+          파라미터로 현재 트랜젝션을 주니 정상 동작 함 
+        </p>
+
+        <h3>
+          5. <strong>`전략패턴`</strong>을 이용한 동적 SQL 처리
+        </h3>
+        <p>
+          관리자 페이지에서 설정한데로 게시글 목록 로직이 동적으로 변경되어야하는 기능 구현이 필요
+        </p>
+        <p>
+          검색 파라미터, 조건, 결과 등등의 로직을 추상화했고
+        </p>
+        <p>
+          전략 패턴으로 적용해서 코드 간결화
+        </p>
+
         <hr />
         <h3>프로젝트 이미지</h3>
         <img src='/img/projects/studymoa/0.png' alt={'1'} />
@@ -319,7 +350,7 @@ const projects = [
         <p>
           외부기관에서 심사 후 100%를 달성
         </p>
-        <a href="https://websoul.co.kr/accessibility/WA_guide22.asp">웹접근성 항목</a>
+        <a href="https://websoul.co.kr/accessibility/WA_guide22.asp" target="_blank">웹접근성 항목</a>
         <img src='https://www.metlife.co.kr/content/dam/metlife/kr/author/layout/footer/logo-wa-202111.png' alt={'2'} />
 
         <hr />
@@ -388,7 +419,7 @@ const projects = [
     imageUrl: "img/projects/sk-mis/1.png",
     subtitle:
       "SK 내부 전사시스템 개발 참여",
-    period: "2021.09 ~ 2021.11",
+    period: "2021.09 ~ 2021.11 (3개월)",
     roles: "풀스택개발자",
     tech: "vue, string-boot, jpa, mybatis, realGrid",
     description: (
@@ -417,7 +448,7 @@ const projects = [
     imageUrl: "img/projects/forensic/1.png",
     subtitle:
       "대검찰청 디지털 증거 분석 송치 시스템",
-    period: "2021.03 ~ 2021.05",
+    period: "2021.03 ~ 2021.05 (3개월)",
     roles: "프론트엔드",
     tech: "vue, electron, realGrid",
     description: (

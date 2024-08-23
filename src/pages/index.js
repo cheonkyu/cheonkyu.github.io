@@ -108,9 +108,9 @@ function Home() {
                 </Link>
               </div>
               <div className="pagination-nav__item pagination-nav__item--next">
-                <Link className="pagination-nav__link" to={useBaseUrl("docs/")}>
-                  <div className="pagination-nav__sublabel">Refer to</div>
-                  <div className="pagination-nav__label">My docs</div>
+                <Link className="pagination-nav__link" to={useBaseUrl("activities/")}>
+                  <div className="pagination-nav__sublabel">Check out</div>
+                  <div className="pagination-nav__label">My activities</div>
                 </Link>
               </div>
             </nav>
