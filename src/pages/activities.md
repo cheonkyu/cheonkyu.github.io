@@ -44,3 +44,9 @@ hide_table_of_contents: false
 |2019.02|정보처리기사|
 |2017.09|네트워크 관리사 2급|
 |2017.09|리눅스마스터 2급| 
+
+## 오픈소스 기여
+
+|프로젝트|활동내용|pull request|
+|--|--|--|
+|[diyC](https://github.com/w-vi/diyC) A simple educational Linux container runtime. |[fix] make build error and cgroup memory. add Dockerfile for test| [LINK](https://github.com/w-vi/diyC/pull/2), redtree0 (대학생 때, github 아이디)|
