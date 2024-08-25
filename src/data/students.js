@@ -25,7 +25,7 @@ const projects = [
         <h3>프로젝트 이미지</h3> 
         <img src='/img/projects/students/passta/2.png' alt={'2'} />
         <img src='/img/projects/students/passta/3.png' alt={'3'} />
-        <img src='/img/projects/students/passta/4.png' alt={'4'} />
+        {/* <img src='/img/projects/students/passta/4.png' alt={'4'} /> */}
       </>
     ),
     links: [
