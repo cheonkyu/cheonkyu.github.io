@@ -1,6 +1,6 @@
 ---
 title: Contents
-slug: "/"
+slug: "/contents"
 ---
 
 Published on January 23, 2021  
