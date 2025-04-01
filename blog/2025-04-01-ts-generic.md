@@ -61,7 +61,7 @@ fetchFiles(languages, ["kr", "en"]);
 ## 형식 맵을 이용한 매핑 형식 사용하기
 
 Q. 문자열 식별자에 기반한 특정 하위 형식의 객체를 만드는 팩토리 함수를 구현하는데, 다양한 하위 형식이 존재할 수 있는 상황
-A. 모든 하위 형식에 형식 맵에 저장하고 인덱스로 접근할 수 있게 한 다음 Partial<T> 같은 매핑된 형식을 사용
+A. 모든 하위 형식에 형식 맵에 저장하고 인덱스로 접근할 수 있게 한 다음 Partial`<T>` 같은 매핑된 형식을 사용
 
 ```ts
 // interface HTMLElementTagNameMap {
@@ -182,7 +182,7 @@ function groupToys(toys: Toy[]): GroupedToys {
 ## ThisType으로 객체의 this 정의하기
 
 Q. 앱에서 여러 메서드를 포함하는 복잡한 설정 객체들을 처리하는데, 사용처에 따라 this의 컨텍스트가 달라짐
-A. 내장 제네릭 ThisType<T>를 이용해 this를 올바르게 정의
+A. 내장 제네릭 ThisType`<T>`를 이용해 this를 올바르게 정의
 
 Vuejs 같은 프레임워크는 많은 팩토리 함수에 의존
 

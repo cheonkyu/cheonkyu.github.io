@@ -5,32 +5,32 @@
 - 선택형 프로퍼티를 더 엄격하게 처리하도록 tsconfig에서 `exactOptionalPropertyTypes` 활성화하기
   (Interpret optional property types as written, rather than adding undefined.)
 
-```
+```ts
 type Settings = {
-  language: "en" | "kr",
-  theme?: "github"
-}
+  language: "en" | "kr";
+  theme?: "github";
+};
 
-function getTheme(settings : Settings) {
-  if ('theme' in settings) {
-    return settings.theme
+function getTheme(settings: Settings) {
+  if ("theme" in settings) {
+    return settings.theme;
   }
-  return 'default'
+  return "default";
 }
 
 // 빠진 프로퍼티
 const settings: Settings = {
-  language: 'en'
-}
+  language: "en",
+};
 
 // undefined 값
 const settings1: Settings = {
-  language: 'en',
-  theme: undefined
-}
+  language: "en",
+  theme: undefined,
+};
 
-console.log(getTheme(settings)) // 'default'
-console.log(getTheme(settings1)) // undefined
+console.log(getTheme(settings)); // 'default'
+console.log(getTheme(settings1)); // undefined
 ```
 
 ## 열거형 사용하기
