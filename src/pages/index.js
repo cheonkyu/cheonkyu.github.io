@@ -124,15 +124,6 @@ function Home() {
                   <div className="pagination-nav__label">My projects</div>
                 </Link>
               </div>
-              <div className="pagination-nav__item pagination-nav__item--next">
-                <a
-                  className="pagination-nav__link"
-                  href={useBaseUrl("pdf/이력서_김천규.pdf")}
-                >
-                  <div className="pagination-nav__sublabel">Download</div>
-                  <div className="pagination-nav__label">My resume</div>
-                </a>
-              </div>
             </nav>
           </div>
         </section>
